@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Certificates | Neha Kumari</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-award"></i>
+        <span>My <b>Certificates</b></span>
+    </div>
+
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search certificates..."
+        >
+    </div>
+
+</header>
+
+
+<!-- ================= PROFILE ================= -->
+
+<section class="profile-section">
+
+    <div class="profile-left">
+
+        <img
+            src="neha123.jpg"
+            alt="Neha Kumari"
+            class="profile-photo"
+        >
+
+        <div class="profile-info">
+
+            <h1>Neha Kumari</h1>
+
+            <p>Information Technology (IT) Student</p>
+
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Ranchi, Jharkhand, India
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="certificate-count">
+
+        <i class="fa-solid fa-certificate"></i>
+
+        <div>
+            <small>Total Certificates</small>
+            <h2 id="totalCertificates">0</h2>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FILTERS ================= -->
+
+<section class="filters">
+
+    <button class="filter active" data-category="All">
+        All
+    </button>
+
+    <button class="filter" data-category="Infosys">
+        Infosys
+    </button>
+
+    <button class="filter" data-category="Microsoft">
+         Microsoft
+    </button>
+
+    <button class="filter" data-category="Google">
+        Google
+    </button>
+
+    <button class="filter" data-category="Deloitte">
+        Deloitte
+    </button>
+
+    <button class="filter" data-category="TCS iON">
+        TCS iON
+    </button>
+
+    <button class="filter" data-category="Tata">
+        Tata
+    </button>
+
+    <button class="filter" data-category="JP Morgan">
+         JP Morgan
+    </button>
+
+    <button class="filter" data-category="Unstop">
+         Unstop
+    </button>
+
+    <button class="filter" data-category="Walmart">
+         Walmart
+    </button>
+
+    <button class="filter" data-category="Skyscanner">
+         Skyscanner
+    </button>
+
+    <button class="filter" data-category="North Star">
+         North Star
+    </button>
+
+    <button class="filter" data-category="NISM">
+         NISM
+    </button>
+
+     <button class="filter" data-category="Nasscom">
+         Nasscom
+    </button>
+
+     <button class="filter" data-category="Udemy">
+         Udemy
+    </button>
+
+     <button class="filter" data-category="MyBharat">
+         MyBharat
+    </button>
+
+    <button class="filter" data-category="IBM">
+         IBM
+    </button>
+
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+
+<main>
+
+    <div id="certificateContainer" class="certificate-grid"></div>
+
+    <div id="noResult" class="no-result">
+        <i class="fa-solid fa-folder-open"></i>
+        <h2>No Certificate Found</h2>
+        <p>Try another search or category.</p>
+    </div>
+
+</main>
+
+
+<!-- ================= MODAL ================= -->
+
+<div id="certificateModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <img id="modalImage" src="" alt="Certificate">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalIssuer"></p>
+
+        <a
+            id="modalDownload"
+            class="modal-download"
+            href="${certificate.file}"
+            download
+        >
+            <i class="fa-solid fa-download"></i>
+            Download Certificate
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <p>© 2026 Neha Kumari | Designed & Developed by Neha </p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
