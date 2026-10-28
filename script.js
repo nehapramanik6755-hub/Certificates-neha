@@ -373,7 +373,7 @@ function displayCertificates(data) {
                         class="view-btn"
                         onclick='openCertificate(${JSON.stringify(certificate)})'
                     >
-                        <i class="fa-solid fa-eye"></i>
+                       
                         View Certificate
                     </button>
 
@@ -382,8 +382,8 @@ function displayCertificates(data) {
                         class="download-btn"
                         target="_blank"
                     >
-                        <i class="fa-solid fa-download"></i>
-                       View Certificate
+                       
+                       View Document
                     </a>
 
                 </div>
