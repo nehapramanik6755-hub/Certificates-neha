@@ -271,6 +271,24 @@ const certificates = [
         image: "Images/Twitter.png",
         file: "PDF/Twitter Bootstrap.pdf"
     },
+
+    {
+        title: "Fund My Crazy",
+        issuer: "Google",
+        date: "05 September 2026",
+        category: "Google",
+        image: "Images/google1.png",
+        file: "PDF/google2.pdf"
+    },
+
+     {
+        title: "Hacknowa Global Hackathon 2026",
+        issuer: "Innovation Hack",
+        date: "21 October 2026",
+        category: "Hackathon",
+        image: "Images/hackathon.png",
+        file: "PDF/hackathon.pdf"
+    },
 ];
 
 
@@ -365,7 +383,7 @@ function displayCertificates(data) {
                         target="_blank"
                     >
                         <i class="fa-solid fa-download"></i>
-                        Download Certificate
+                       View Certificate
                     </a>
 
                 </div>
